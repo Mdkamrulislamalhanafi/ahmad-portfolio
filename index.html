@@ -1,48 +1,160 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MD KAMRUL ISLAM | Portfolio</title>
 
-    <title>Ahmad Hasan</title>
-
-    <link rel="stylesheet" href="style.css">
-</head>
-
-<body>
-
-    <h1>Welcome to My Website</h1>
-
-    <h2>Ahmad Hasan</h2>
-
-    <p>I am a Web Developer.</p>
-
-</body>
-</html>
-function showMessage() {
-    document.getElementById("message").innerHTML =
-    "Welcome Ahmad Hasan!";
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ahmad Hasan</title>
-    <link rel="stylesheet" href="style.css">
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f7fb;
+  color: #222;
+}
+
+header {
+  background: #102a43;
+  color: white;
+  padding: 22px;
+  text-align: center;
+}
+
+nav {
+  background: #176b55;
+  padding: 15px;
+  text-align: center;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 10px;
+  font-weight: bold;
+}
+
+.hero {
+  text-align: center;
+  padding: 85px 20px;
+  background: linear-gradient(135deg, #102a43, #176b55);
+  color: white;
+}
+
+.hero h1 {
+  font-size: 32px;
+  margin-bottom: 15px;
+}
+
+.hero p {
+  font-size: 17px;
+  margin-bottom: 25px;
+}
+
+.btn {
+  display: inline-block;
+  background: #f4c542;
+  color: #102a43;
+  padding: 12px 25px;
+  text-decoration: none;
+  border-radius: 25px;
+  font-weight: bold;
+}
+
+section {
+  padding: 45px 20px;
+  text-align: center;
+}
+
+section h2 {
+  color: #176b55;
+  margin-bottom: 20px;
+}
+
+.card {
+  background: white;
+  max-width: 600px;
+  margin: 15px auto;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 3px 12px #ddd;
+}
+
+footer {
+  background: #102a43;
+  color: white;
+  text-align: center;
+  padding: 25px;
+}
+
+@media(max-width: 600px) {
+  nav a {
+    display: inline-block;
+    margin: 7px;
+  }
+}
+</style>
 </head>
+
 <body>
 
-    <h1>Welcome to My Website</h1>
+<header>
+  <h2>MD KAMRUL ISLAM</h2>
+  <p>Welcome to My Personal Website</p>
+</header>
 
-    <h2>Ahmad Hasan</h2>
+<nav>
+  <a href="#home">Home</a>
+  <a href="#about">About</a>
+  <a href="#services">Services</a>
+  <a href="#contact">Contact</a>
+</nav>
 
-    <p id="message">I am a Web Developer.</p>
+<div class="hero" id="home">
+  <h1>Assalamu Alaikum!</h1>
+  <p>Welcome to the Personal Website of MD KAMRUL ISLAM.</p>
+  <a href="#about" class="btn">Explore More</a>
+</div>
 
-    <button onclick="showMessage()">
-        Click Me
-    </button>
+<section id="about">
+  <h2>About Me</h2>
+  <div class="card">
+    <h3>MD KAMRUL ISLAM</h3>
+    <p>Welcome to my personal website.
+    I am interested in learning, creativity,
+    technology and Islamic knowledge.</p>
+  </div>
+</section>
 
-    <script src="script.js"></script>
+<section id="services">
+  <h2>My Services</h2>
+  <div class="card">
+    <h3>Creative Work</h3>
+    <p>Creative ideas and digital content.</p>
+  </div>
+  <div class="card">
+    <h3>Digital Projects</h3>
+    <p>Learning and developing online projects.</p>
+  </div>
+</section>
+
+<section id="contact">
+  <h2>Contact Me</h2>
+  <div class="card">
+    <p>Thank you for visiting my website.</p>
+    <p>Feel free to contact me.</p>
+  </div>
+</section>
+
+<footer>
+  <p>© 2026 MD KAMRUL ISLAM</p>
+  <p>All Rights Reserved.</p>
+</footer>
+
 </body>
 </html>
